@@ -1,0 +1,44 @@
+Algo 
+DEFINIR
+	quantite, camion : 	entier					gcc fichier.c -o fichier.exe
+	transportDupond, transportMartin, prixDupond, prixMartin : réels
+FIN DEFINIR
+
+	DEBUT
+		ECRIRE "Quelle quantite de sable souhaitez-vous"
+		LIRE quantite
+		camion <- quantite / 10
+		
+		transportDupond <- ((camion*10)*0,1)*1,2
+		transportMartin <- ((camion*20)*0,1)*1,2
+		
+		SI quantite < 8
+			prixDupond <- transportDupond + quantite * 78
+		SINON
+			prixDupond <- transportDupond + (quantite * 78)*0,9
+		FINSI	
+		SI quantite < 20
+			prixMartin <- transportMartin + quantite * 73
+		SINON
+			prixMartin <- transportMartin + (quantite * 73)*0.70
+		FINSI
+		
+		SI (prixDupond < prixMartin)
+			ECRIRE ("l'entreprise Dupond est plus avantageuse")
+		SINON
+			ECRIRE ("l'entreprise Martin est plus avantageuse")
+		FINSI
+		
+		
+		
+		
+		
+		
+		ECRIRE ""
+		SI 
+		ELSE
+			
+		FINSI
+		
+		ECRIRE "" 
+	FIN
