@@ -1,0 +1,13 @@
+Algo Somme
+DEFINIR
+	n, i, somme : 	entier					gcc fichier.c -o fichier.exe
+FIN DEFINIR
+
+	DEBUT
+		ECRIRE "Donnez un entier svp"
+		LIRE n
+		POUR i allant de 1 à n
+			somme <- somme + i
+		FIN POUR
+		
+		ECRIRE "la somme totale est ", somme
