@@ -1,0 +1,25 @@
+Algo - Factorielle 
+DEFINIR
+	n,i,resultat : 	entier			gcc fichier.c -o fichier.exe
+FIN DEFINIR
+
+	DEBUT
+		resultat <- 1
+		ECRIRE "Quelle factorielle ?"
+		LIRE n
+
+		SI n < 0
+			ECRIRE "une factorielle doit être positive"
+		SINON
+			SI n == 0
+				resultat = 1
+			SINON
+				POUR i allant de 1 à n
+					resultat = resultat * i
+				FINPOUR
+			FINSI
+			ECRIRE ("Le resultat est ", resultat)
+		FINSI	
+		
+			
+	FIN
