@@ -1,0 +1,50 @@
+ALGO SECOND DEGRES
+
+DEFINIR
+	a,b,c, delta, resultat1, resultat2 : décimaux
+	flag : entier
+FIN DEFINIR
+DEBUT
+	flag <- 1
+	ECRIRE "Donnez les coefficients du polynôme du second degrès svp.")
+	Lire (a,b,c)
+	SI a = 0
+		SI b =0
+			SI c= 0
+				ECRIRE "il existe une infinité de solution"
+				flag <- 0
+			SINON
+				ECRIRE "Equation impossible"
+				flag <- 0
+			FIN SI
+		SINON
+			resultat1 <- -c/b
+		FIN SI	
+	SINON
+		delta <- b*b-4ac
+		SI delta = 0 
+			resultat 1 <- -b/2a
+			flag <- 1
+		FINSI
+		SI delta < 0 
+			ECRIRE "Pas de solution réelle"
+			flag <- 0
+		FINSI
+		SI delta > 0
+			resultat 1 <- (-b-sqrt(delta))/2a
+			resultat 2 <- (-b+sqrt(delta))/2a
+			flag <- 2			
+		FINSI
+	FINSI
+	SI flag = 0
+		ECRIRE ("L'équation n'a pas de solution particulière")
+	FINSI
+	SI flag = 1
+		ECRIRE ("L'équation a un seule solution", resultat 1)
+	FINSI
+	SI flag = 2
+		ECRIRE ("L'équation a deux solutions", resultat1, resultat2)
+	FINSI
+	
+	
+FIN
