@@ -1,0 +1,13 @@
+NOM : ECHANGE
+
+DEFINIR
+	float : C,F
+FIN DEFINIR
+
+DEBUT
+	Afficher ("bonjour et bienvenue")
+	Afficher ("veuillez indiquer la temperature en Fahrenheit")
+	Lire (F)
+	C <- 5/9 *(F-32) 
+	Afficher ("La temperature en Celsius est :  " + C)
+FIN
