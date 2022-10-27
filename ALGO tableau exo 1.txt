@@ -1,0 +1,73 @@
+ALGO Exercice 1 - situation 1
+
+DECLARATION
+	Tableau (float): notes - longueur 5
+	Décimales : max, min, moyenne, somme
+	fonctions : remplirTableau, afficheTableau, moyenneTableau, minTableau, maxTableau
+FIN DECLARATION
+
+DEBUT fonction moyenneTableau
+
+	somme <- 0
+	POUR i allant de 0 à 4 
+		somme <- somme + tableau de i
+	FIN POUR
+	RENVOI somme/5
+
+FIN
+
+DEBUT fonction RemplirTableau
+
+	POUR i allant de 0 à 4 
+		AFFICHER "entrer la valeur de la ième case du tableau"
+		REMPLIR case du tableau
+	FIN POUR
+
+FIN
+
+DEBUT fonction afficheTableau
+
+	POUR i allant de 0 à 4 
+		AFFICHER "la valeur de la ième", i," case est :" tableau de i
+	FIN POUR
+
+FIN
+
+DEBUT fonction maxTableau
+
+	max <- 0
+	POUR i allant de 0 à 4 
+		SI (tableau de i > max)
+			max = tableau de i
+		FIN SI
+	FIN POUR
+	RENVOI max
+
+FIN
+
+DEBUT fonction minTableau
+
+	min <- 20
+	POUR i allant de 0 à 4 
+		SI (tableau de i < min)
+			min = tableau de i
+		FIN SI
+	FIN POUR
+	RENVOI min
+
+FIN
+
+EXECUTION
+	
+	AFFICHER "bonjour"
+	DECLARER Tableau notes
+	FONCTION RemplirTableau(notes)
+	moyenne <- moyenneTableau(notes)
+	max <- maxTableau(notes)
+	min <- minTableau(notes)
+	afficheTableau(notes)
+	AFFICHER "la moyenne est :", moyenne
+	AFFICHER "le max est :", max
+	AFFICHER "le min est :", min
+
+FIN EXECUTION
