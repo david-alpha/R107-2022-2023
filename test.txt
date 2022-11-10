@@ -1,0 +1,3 @@
+Bonjour à tous,
+
+Bienvenue dans ce TP sur les fichiers.
